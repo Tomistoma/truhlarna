@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap');
+
+/* Apply font globally */
+body, html {
+  background-color: white;
+  color: #333; /* Set text color to dark gray for better contrast */
+  margin: 0;
+  padding: 0;
+
+    font-display: swap;
+    font-size: 1rem;
+} 
+
+
+/* Navbar layout */
+.top-panel {
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Vertically center items */
+  height: 17vh;
+  width: 100%;
+  background-color: white;
+  padding: 0 20px;
+  box-sizing: border-box;
+  position: relative;
+  
+}
+
+/* Logo styling */
+.logo {
+  max-width: 10%; /* Sleeker logo size */
+  margin-top: -45px;
+  position: absolute;
+  left: 50%; /* Center the logo horizontally */
+  transform: translateX(-50%); /* Ensure the logo is truly centered */
+}
+
+/* Menu Icon styling */
+.menu-icon {
+  color: #225045; /* Green color for the menu icon */
+  position: absolute; /* Ensure it doesn't interact with flexbox */
+  right: 20px; /* Align it to the far right */
+  top: 50%; /* Vertically center the icon */
+  transform: translateY(-50%); /* Offset to truly center vertically */
+  cursor: pointer;
+  font-size: 2rem; /* Larger icon size */
+}
+
+/* Custom Drawer */
+.custom-drawer {
+  width: 40vw; /* Drawer width: 40% of the viewport */
+  height: 100vh; /* Full height */
+  background-color: #225045; /* Green background */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center items vertically */
+  align-items: flex-start; /* Align links to the left */
+  padding: 20px;
+  transition: all 0.3s ease; /* Smooth transition for opening */
+
+}
+
+.custom-drawer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.custom-drawer ul li {
+  margin-bottom: 25px; /* Space between each item */
+}
+
+/* Drawer Link Styling */
+.drawer-link {
+  color: white; /* White text to contrast against green background */
+  margin-right: 600px;
+  text-align: left;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effects */
+  
+}
+
+.drawer-link:hover {
+  transform: translateX(10px); /* Slight slide on hover */
+  color: #225045; /* Text color changes to #225045 on hover */
+  width: 100%; /* Extend link to full width of sidebar */
+}
+
+/* Drawer Divider */
+.drawer-divider {
+  background-color: white;
+  margin: 20px 0;
+}

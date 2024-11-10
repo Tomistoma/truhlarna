@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap');
+
+/* General Container */
+body, html {
+  background-color: white;
+  color: #333; /* Set text color to dark gray for better contrast */
+  margin: 0;
+  padding: 0;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 200 ;
+}
+
+.contact-container {
+  margin-top: 25px;
+  width: 100%;
+  padding: 50px 20px;
+  background-color: #f3f7f5;
+  color: #333;
+  font-family: "Titillium Web", sans-serif;
+  text-align: center;
+}
+
+/* Inquiry Form */
+.inquiry-form {
+  
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+  margin-bottom: 25px;
+}
+
+.inquiry-form h2 {
+  font-size: 1.6rem;
+  color: #225045;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  font-size: 0.9rem;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 0.9rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border: 1px solid #225045;
+  box-shadow: 0 0 4px rgba(34, 80, 69, 0.3);
+}
+
+.submit-btn {
+  background-color: #225045;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 25px;
+}
+
+.submit-btn:hover {
+  background-color: #1c6a56;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .inquiry-form h2 {
+    font-size: 1.5rem;
+  }
+
+  .form-group input, .form-group textarea {
+    font-size: 0.85rem;
+  }
+
+  .submit-btn {
+    font-size: 0.9rem;
+  }
+}
